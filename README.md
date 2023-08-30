@@ -18,4 +18,5 @@ Additionally, GROMACS must be patched with PLUMED during installation. An exampl
 performed as follows:
 
 gmx grompp -f md.mdp -c md_config_start.gro -t md_config_start.cpt -p topol.top -o trajectory.tpr
+
 gmx mdrun -f trajectory.tpr -plumed biasing_potential.dat
