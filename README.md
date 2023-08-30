@@ -18,5 +18,8 @@ Additionally, GROMACS must be patched with PLUMED during installation. An exampl
 performed as follows:
 
 gmx grompp -f md.mdp -c md_config_start.gro -t md_config_start.cpt -p topol.top -o trajectory.tpr
-
 gmx mdrun -f trajectory.tpr -plumed biasing_potential.dat
+
+The PLUMED biasing potential file will automatically save the biasing potential and each molecular coordinate
+such that the MCs can be used to train the normalizing flow model and identify a reaction coordinate.
+
