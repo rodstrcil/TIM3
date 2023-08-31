@@ -1,5 +1,5 @@
 external0: OPES_METAD ...
-    ARG=cleft_distance,rc0
-    TEMP=310 BARRIER=40
+    ARG=rc0
+    TEMP=310 BARRIER=20
     PACE=500*10
 ...
